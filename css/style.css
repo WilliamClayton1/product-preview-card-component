@@ -18,7 +18,7 @@
 }
 .previewCard {
     /*background-color: #ffffff;*/
-    width: 600px;
+    max-width: 600px;
     height: 450px;
     /*border-radius: 10px;*/
 }
@@ -88,5 +88,31 @@ button:hover {
     align-self: start;
     gap: 19px;
     padding-left: 33px;
+}
+
+@media (max-width: 600px) {
+    .previewCard {
+        flex-direction: column;
+        height: 611px;
+        width: 343px;
+    }
+    .primaryImage{
+        width: 343px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+    .rightSide {
+        width: 343px;
+        max-height: 371px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        position: relative;
+
+
+    }
+    .leftSide {
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
