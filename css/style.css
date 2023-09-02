@@ -89,6 +89,11 @@ button:hover {
     gap: 19px;
     padding-left: 33px;
 }
+.original {
+    color: var(--Aurometal-Saurus);
+    text-decoration-line: line-through;
+    font-size: 13px;
+}
 
 @media (max-width: 600px) {
     .previewCard {
@@ -100,18 +105,36 @@ button:hover {
         width: 343px;
         border-bottom-left-radius: 0;
         border-top-right-radius: 10px;
+        position: relative;
+        bottom: 105px;
     }
-    .rightSide {
+    section.rightSide {
         width: 343px;
         max-height: 371px;
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0;
+        padding: 20px;
         position: relative;
-
-
     }
-    .leftSide {
-        width: 100%;
+    h1 {
+        width: 295px;
+    }
+    .paragraph{
+        width: 295px;
+        padding-top: 16px;
+    }
+    .heading {
+        gap: 10px;
+    }
+    .prices {
+        padding: 5px;
+    }
+    button {
+        width: 295px;
+    }
+    section.leftSide {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
         overflow: hidden;
     }
 }
